@@ -6,8 +6,12 @@ use App\Models\Emergency;
 
 class EmergencyController{
 
-    public function index(){
+  public function __construct(){
+    $this->index();
+  }
 
-      $emergency = new Emergency;
-    }
+  public function index(){
+
+    $emergency = new Emergency;
+  }
 }

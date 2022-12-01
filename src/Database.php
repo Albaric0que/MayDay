@@ -12,7 +12,7 @@ class Database{
   public function __construct(){
     try{
       $this->mysql = $this->getConnection();
-      echo "Conexión realizada satisfactoriamente";
+      //echo "Conexión realizada satisfactoriamente";
 
     }
     catch (PDOException $e){

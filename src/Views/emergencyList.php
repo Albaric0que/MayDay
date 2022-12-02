@@ -17,11 +17,6 @@
             </h1>
         </div>
 
-        <div>
-            <a href="?action=create">
-                <button type="button">Nueva emergencia</button>
-            </a>
-        </div>
             <div id="wrapper">
             <div id="content-wrapper" class="d-flex flex-column">
                 <div id="content">
@@ -29,6 +24,10 @@
                         <div class="table-responsive">
                         <table class="table table-bordered" width="100%" cellspacing="0">
                             <thead>
+                                <tr>
+                                    <th scope="row">Emergencias</th>
+                                    <th><a href="?action=create"><button type="button">Nueva emergencia</button></a></th>
+                                </tr>
                                 <tr>
                                     <th scope="row">Id</th>
                                     <th>Nombre</th>

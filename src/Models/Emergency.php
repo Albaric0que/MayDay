@@ -40,4 +40,24 @@ class Emergency{
     }
     return $emergencyList;
   }
+
+  public function getName() {
+    return $this -> name;
+  }
+
+   public function getIssue() {
+    return $this -> issue;
+  }
+
+  public function getId() {
+    return $this -> id;
+  }
+
+  public function getClassification() {
+    return $this -> classification;
+  }
+
+  public function getDateTime() {
+    return $this -> dateTime;
+  }
 }

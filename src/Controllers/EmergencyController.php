@@ -37,6 +37,7 @@ class EmergencyController{
 
   public function store(array $request){
     $newEmergency = new Emergency(null, $request["name"], $request["issue"], $request["classification"], null);
+    
     $newEmergency->save();
 
     $this->index();

@@ -46,6 +46,9 @@
                                         <td>{$emergency -> getIssue()}</td>
                                         <td>{$emergency -> getClassification()}</td>
                                         <td>{$emergency -> getDateTime()}</td>
+                                        <td>
+                                            <a href='?action=delete&id={$emergency->getId()}'><img src='./public/img/bin.png'></a>
+                                        </td>
                                     </tr>
                                     ";
                                 }

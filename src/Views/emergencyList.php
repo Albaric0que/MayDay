@@ -47,7 +47,7 @@
                                         <td>{$emergency -> getClassification()}</td>
                                         <td>{$emergency -> getDateTime()}</td>
                                         <td>
-                                            <a href='?action=delete&id={$emergency->getId()}'><img src='./public/img/bin.png'></a>
+                                            <a href='?action=delete&id={$emergency->getId()}'><img src='./public/img/bin.png' width='5%'></a>
                                         </td>
                                     </tr>
                                     ";

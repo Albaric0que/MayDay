@@ -19,6 +19,11 @@ class EmergencyController{
       return;
     }
 
+    if (isset($_GET["action"]) && ($_GET["action"] == "delete")) {
+      $this->delete($_GET["id"]);
+      return;
+    }
+
     $this->index();
   }
 
@@ -39,6 +44,13 @@ class EmergencyController{
     $newEmergency = new Emergency(null, $request["name"], $request["issue"], $request["classification"], null);
     
     $newEmergency->save();
+
+    $this->index();
+  }
+  public function delete($id){
+    $emergencyHelper = new Emergency();
+    $emergency = $emergencyHelper->findById($id);
+    $emergency->destroy();
 
     $this->index();
   }

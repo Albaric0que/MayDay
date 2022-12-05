@@ -64,4 +64,13 @@ class Emergency{
   public function save() {
     $this->database->mysql->query("INSERT INTO `{$this->table}` (`name`, `issue`, `classification`) VALUES ('$this->name', '$this->issue', '$this->classification');");
   }
+  public function findById($id){
+    $query = $this->database->mysql->query("SELECT * FROM `{$this->table}`WHERE `id`={$id}");
+    $result = $query->fetchAll();
+
+    return new Emergency($result[0]["id"], $result[0]["name"], $result[0]["issue"], $result[0]["classification"], $result[0]["dateTime"]);
+  }
+  public function destroy(){
+    $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$this->id}");
+  }
 }

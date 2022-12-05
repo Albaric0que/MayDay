@@ -45,7 +45,7 @@ class Emergency{
     return $this -> name;
   }
 
-   public function getIssue() {
+  public function getIssue() {
     return $this -> issue;
   }
 
@@ -59,5 +59,9 @@ class Emergency{
 
   public function getDateTime() {
     return $this -> dateTime;
+  }
+
+  public function save() {
+    $this->database->mysql->query("INSERT INTO `{$this->table}` (`name`, `issue`, `classification`) VALUES ('$this->name', '$this->issue', '$this->classification');");
   }
 }

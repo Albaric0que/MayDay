@@ -14,6 +14,11 @@ class EmergencyController{
       return;
     }
 
+    if (isset($_GET["action"]) && ($_GET["action"] == "store")) {
+      $this->store($_POST);
+      return;
+    }
+
     $this->index();
   }
 
@@ -24,5 +29,16 @@ class EmergencyController{
     $emergencies = $emergency->all();
     new View("emergencyList", ["emergency" => $emergencies]); 
 
+  }
+
+  public function create(){
+    new View("createEmergency");
+  }
+
+  public function store(array $request){
+    $newEmergency = new Emergency(null, $request["name"], $request["issue"], $request["classification"], null);
+    $newEmergency->save();
+
+    $this->index();
   }
 }

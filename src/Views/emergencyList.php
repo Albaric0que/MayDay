@@ -10,17 +10,17 @@
         require_once("Components/header.php")
     ?>   
         <main>
-            <div class="tableHeaderBox">
-                <tr>Emergencias
-                        <a href="?action=create"><button class="buttonNew" type="button"><img src='./public/img/nuevo.png'></button></a>
-                </tr>
-            </div>
             <div id="wrapper">
             <div id="content-wrapper" class="d-flex flex-column">
                 <div id="content">
+                    <div class="tableHeaderBox">
+                        <tr>Emergencias
+                            <a href="?action=create"><button class="buttonNew" type="button"><img src='./public/img/nuevo.png'></button></a>
+                        </tr>
+                    </div>
                     <div class="container-fluid card shadow mb-4 card-body tableBody">
                         <div class="table-responsive">
-                        <table class="table table-bordered" width="100%" cellspacing="20">
+                        <table class="table table-bordered" width="100%" cellspacing="10">
                             <thead>
                                 <tr class="headCells">
                                     <th scope="row">ID</th>

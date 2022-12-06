@@ -11,12 +11,6 @@
     ?>   
         <main>
 
-        <div>
-            <h1>
-                Lista de emergencias
-            </h1>
-        </div>
-
             <div id="wrapper">
             <div id="content-wrapper" class="d-flex flex-column">
                 <div id="content">
@@ -26,7 +20,7 @@
                             <thead>
                                 <tr>
                                     <th scope="row">Emergencias</th>
-                                    <th><a href="?action=create"><button type="button">Nueva emergencia</button></a></th>
+                                    <th><a href="?action=create"><button type="button"><img src='./public/img/nuevo.png'></button></a></th>
                                 </tr>
                                 <tr>
                                     <th scope="row">Id</th>
@@ -47,7 +41,7 @@
                                         <td>{$emergency -> getClassification()}</td>
                                         <td>{$emergency -> getDateTime()}</td>
                                         <td>
-                                            <a href='?action=delete&id={$emergency->getId()}'><img src='./public/img/bin.png' width='5%'></a>
+                                            <a href='?action=delete&id={$emergency->getId()}'><img src='./public/img/bin.png'></a>
                                         </td>
                                     </tr>
                                     ";

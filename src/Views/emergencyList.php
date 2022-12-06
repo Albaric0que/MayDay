@@ -10,20 +10,20 @@
         require_once("Components/header.php")
     ?>   
         <main>
-
+            <div class="tableHeaderBox">
+                <tr>Emergencias
+                        <a href="?action=create"><button class="buttonNew" type="button"><img src='./public/img/nuevo.png'></button></a>
+                </tr>
+            </div>
             <div id="wrapper">
             <div id="content-wrapper" class="d-flex flex-column">
                 <div id="content">
-                    <div class="container-fluid card shadow mb-4 card-body">
+                    <div class="container-fluid card shadow mb-4 card-body tableBody">
                         <div class="table-responsive">
-                        <table class="table table-bordered" width="100%" cellspacing="0">
+                        <table class="table table-bordered" width="100%" cellspacing="20">
                             <thead>
-                                <tr>
-                                    <th scope="row">Emergencias</th>
-                                    <th><a href="?action=create"><button type="button"><img src='./public/img/nuevo.png'></button></a></th>
-                                </tr>
-                                <tr>
-                                    <th scope="row">Id</th>
+                                <tr class="headCells">
+                                    <th scope="row">ID</th>
                                     <th>Nombre</th>
                                     <th>Emergencia</th>
                                     <th>Clasificación</th>
@@ -34,12 +34,15 @@
                                 <?php
                                     foreach ($data["emergency"] as $emergency) {
                                     echo  "
-                                    <tr>
+                                    <tr class='dataCells'>
                                         <td>{$emergency -> getId()}</td>
                                         <td>{$emergency -> getName()}</td>
                                         <td>{$emergency -> getIssue()}</td>
                                         <td>{$emergency -> getClassification()}</td>
                                         <td>{$emergency -> getDateTime()}</td>
+                                        <td>
+                                            <a href='?action=edit&id={$emergency->getId()}'><img src='./public/img/editar.png'></a>
+                                        </td>
                                         <td>
                                             <a href='?action=delete&id={$emergency->getId()}'><img src='./public/img/bin.png'></a>
                                         </td>

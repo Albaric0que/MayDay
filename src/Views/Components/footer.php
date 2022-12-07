@@ -1,3 +1,3 @@
 <footer>
-    <div>HOLI</div>
+    <div>&copy;monasLocas2022</div>
 </footer>

@@ -73,4 +73,16 @@ class Emergency{
   public function destroy(){
     $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$this->id}");
   }
+
+  public function rename($nameNew, $issueNew, $classificationNew){
+    $this->name = $nameNew;
+    $this->issue = $issueNew;
+    $this->classification = $classificationNew;
+  }
+
+  public function update(){
+    $this->database->mysql->query("UPDATE `{$this->table}` SET `name` = '{$this->name}', `issue` = '{$this->issue}', `classification` = '{$this->classification}' WHERE 'ID'= {$this->id}");
+
+  }
+
 }

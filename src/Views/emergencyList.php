@@ -45,7 +45,7 @@
                                         </td>
                                         <td>
                                             <a href='?action=delete&id={$emergency->getId()}'><img src='./public/img/bin.png'></a>
-                                        </td>
+                                            </td>
                                     </tr>
                                     ";
                                 }

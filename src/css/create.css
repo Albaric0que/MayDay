@@ -35,15 +35,17 @@
 }
 
 .leftContainer {
-  margin: 70px 15px 150px 50px;
+  margin: 70px 0px 90px 60px;
 }
 
-/* .rigthContainer {
-} */
+.rigthContainer {
+  margin: 50px 0px 30px 50px;
+}
 
 /*inputs */
 .input-group {
   display: flex;
+  align-items: flex-start;
   flex-direction: column;
 }
 
@@ -51,16 +53,19 @@
 .inputGroupName {
   width: 333px;
   height: 58px;
+  border: white solid 2px;
 }
 
 .inputGroupClassification {
   width: 333px;
   height: 58px;
+  border: white solid 2px;
 }
 
 .inputGroupEmergency {
   width: 572px;
   height: 262px;
+  border: white solid 2px;
 }
 
 /* name inputs */
@@ -68,19 +73,16 @@
   background-color: #f6ae59;
   width: 333px;
   height: 46px;
-  border: grey solid 1px;
 }
 
 .spanClassification {
   background-color: #f6ae59;
   width: 333px;
   height: 46px;
-  border: grey solid 1px;
 }
 
 .spanEmergency {
   background-color: #f6ae59;
   width: 572px;
   height: 58px;
-  border: grey solid 1px;
 }

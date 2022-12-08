@@ -25,7 +25,7 @@
                 </div>
                 </div>
                 <div class="botones " style="margin-bottom: 2rem;">
-                <input class="btn-lg btn-outline-success go-add-task float" type="submit" value="Crear">
+                  <input class="btn-lg btn-outline-success go-add-task float" type="submit" value="Crear">
                   <a href="./index.php"><button type="button" id="button-cancel" class="btn btn-outline-danger button-cancel">Cancel</button></a>
                   <input class="btn-lg btn-outline-warning go-add-task float" type="reset" value="Reset">
                  </div>

@@ -24,6 +24,7 @@
                         <input class="btn-lg btn-outline-warning go-add-task float" type="reset" value="Reset">
                     </div>
                 </form>
+        </main>
 <?php
         require_once("Components/footer.php")
     ?> 

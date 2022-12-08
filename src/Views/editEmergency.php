@@ -3,7 +3,8 @@
     require_once("Components/header.php");
 ?>
 <body>
-        <main class="card" style="width: 80%; height:27rem; display:flex; justify-content:center; ">
+        <main >
+        <div class="card" style="width: 80%; height:27rem; display:flex; justify-content:center; ">
             <h2 class="text-center" style="margin-bottom: 3rem; margin-top: 1rem;">Editar Emergencia</h2>
             <a href="./index.php"><button type="button" id="button-cancel" class="btn btn-outline-danger button-cancel">Cancel</button></a>
                 <form class="justify-content-center " action='?action=update&id=<?php echo $data["emergency"]->getId()?>' method="post">
@@ -24,6 +25,7 @@
                         <input class="btn-lg btn-outline-warning go-add-task float" type="reset" value="Reset">
                     </div>
                 </form>
+                </div>
         </main>
 <?php
         require_once("Components/footer.php")

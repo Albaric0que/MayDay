@@ -1,52 +1,50 @@
 .buttonNew {
-    border-style: none;
-    background-color: #ce770f;
-    padding-right: 50px;
+  border-style: none;
+  background-color: #ce770f;
+  padding-right: 50px;
 }
 
 table {
-    border-collapse: initial !important;
+  border-collapse: initial !important;
 }
 
 .tableHeaderBox {
-    background-color: #ce770f;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 1156px;
-    height: 87px;
-    font-family:'Cabin', sans-serif;
-    font-weight:bold;
-    font-size: 40px;
-    color: #ffffff;
-    margin-left: 100px;
-    margin-top: 70px;
-    padding-left: 50px;
-    box-shadow: 2px 2px 6px #000000 !important;
+  background-color: #ce770f;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1156px;
+  height: 87px;
+  font-family: "Cabin", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #ffffff;
+  margin-left: 100px;
+  margin-top: 70px;
+  padding-left: 50px;
+  box-shadow: 2px 2px 6px #000000 !important;
 }
 
-
 .tableBody {
-    width: 1156px !important;
-    height: 518px !important;
-    background-color: #e8e8e8;
-    margin-left: 100px;
-    border-radius: 0%;
+  width: 1156px !important;
+  height: 518px !important;
+  background-color: #e8e8e8;
+  margin-left: 100px;
+  border-radius: 0%;
 }
 
 .headCells {
-    background-color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
+  background-color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
 }
 
 th {
-    font-weight: normal !important;
+  font-weight: normal !important;
 }
 
 .dataCells {
-    background-color: #ffffff !important;
-    font-family: 'Inter', sans-serif;
-    font-size: 15px;
+  background-color: #ffffff !important;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
 }
-

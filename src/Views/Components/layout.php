@@ -10,5 +10,5 @@
         <link rel="stylesheet" href="./src/css/emergencyList.css">
         <link rel="stylesheet" href="./src/css/header.css">
         <link rel="stylesheet" href="./src/css/create.css">
-        <link rel="stylesheet" href="./src/css/edit.css">
+       <!--  <link rel="stylesheet" href="./src/css/edit.css"> -->
     </head>

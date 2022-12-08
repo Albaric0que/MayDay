@@ -3,28 +3,35 @@
     require_once("Components/header.php");
 ?>
 <body>
-        <main class="card" style="width: 80%; height:27rem; display:flex; justify-content:center; ">
-            <h2 class="text-center" style="margin-bottom: 3rem; margin-top: 1rem;">Editar Emergencia</h2>
-            <a href="./index.php"><button type="button" id="button-cancel" class="btn btn-outline-danger button-cancel">Cancel</button></a>
-                <form class="justify-content-center " action='?action=update&id=<?php echo $data["emergency"]->getId()?>' method="post">
-                    <div class="input-group" style=" margin-bottom: 2rem; width: 90%; margin-left: 5%;">
-                        <span class="input-group-text">Nombre</span>
-                        <input class="form-control" type="text" name="name" required value='<?php echo $data["emergency"]->getName()?>'>
-                    </div>
-                    <div class="input-group" style="width: 90%; margin-left: 5%;">
-                        <span class="input-group-text">Emergencia</span>
-                        <input class="form-control" area-label="With textarea" type="text" name="issue" required value='<?php echo $data["emergency"]->getIssue()?>'>
-                    </div>
-                    <div class="input-group" style="width: 90%; margin-left: 5%;">
-                        <span class="input-group-text">Clasificación</span>
-                        <input class="form-control" area-label="With textarea" type="text" name="classification" required value='<?php echo $data["emergency"]->getClassification()?>'>
-                    </div>
-                    <div class="botones " style="margin-bottom: 2rem;">
-                        <input class="btn-lg btn-outline-success go-add-task float" type="submit" value="Edit">
-                        <input class="btn-lg btn-outline-warning go-add-task float" type="reset" value="Reset">
-                    </div>
-                </form>
-        </main>
+<main >
+        <div class="createCard">
+        <h2 class="cardHead">Editar Emergencia</h2>
+              <form class="formContainer" action='?action=store' method="post">
+                <div class="leftContainer">
+                <div class="input-group"  >
+                    <span class="spanName">Nombre</span>
+                    <input  class="inputGroupName" type="text" name="name" required placeholder="Escribe aquí el nombre">
+                 </div>
+                 <div class="input-group">
+                     <span class="spanClassification">Clasificación</span>
+                     <textarea class="inputGroupClassification" area-label="With textarea" type="text" name="classification" required placeholder="Escribe aquí la clasificación"></textarea>
+                </div>
+                </div>
+                <div class="rigthContainer">
+                <div class="input-group">
+                    <span class="spanEmergency">Emergencia</span>
+                    <textarea class="inputGroupEmergency" area-label="With textarea" type="text" name="issue" required placeholder="Descripción de la emergencia"></textarea>
+                </div>
+                </div>
+                <div class="botones" style="margin-bottom: 2rem;">
+                <a href='?action=reset&id={$emergency->getId()}'><img src='./public/img/reset.png'></a>
+                <a href='?action=save&id={$emergency->getId()}'><img src='./public/img/save.png'></a>
+                <a href='?action=delete&id={$emergency->getId()}'><img src='./public/img/cancel.png'></a>
+                
+                 </div>
+             </form>
+        </div>
+    </main>
 <?php
         require_once("Components/footer.php")
     ?> 

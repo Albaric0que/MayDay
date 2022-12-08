@@ -1,0 +1,82 @@
+* {
+  font-family: "Cabin", sans-serif;
+}
+
+.footerContainer {
+  width: auto;
+  height: 93px;
+  background-color: #f6ae59;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createCard {
+  width: 1112px;
+  height: 518px;
+  display: flex;
+  flex-direction: column;
+  background-color: #e8e8e8;
+  margin: 50px 80px 50px 100px;
+}
+
+.formContainer {
+  display: flex;
+}
+
+.cardHead {
+  height: 87px;
+  font-weight: bold;
+  background-color: #ce770f;
+  color: white;
+  padding: 20px 0px 0px 20px;
+}
+
+.leftContainer {
+  margin: 70px 15px 150px 50px;
+}
+
+/* .rigthContainer {
+} */
+
+/*inputs */
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Text inputs */
+.inputGroupName {
+  width: 333px;
+  height: 58px;
+}
+
+.inputGroupClassification {
+  width: 333px;
+  height: 58px;
+}
+
+.inputGroupEmergency {
+  width: 572px;
+  height: 262px;
+}
+
+/* name inputs */
+.spanName {
+  background-color: #f6ae59;
+}
+
+.spanClassification {
+  background-color: #f6ae59;
+}
+
+.spanEmergency {
+  background-color: #f6ae59;
+}
+
+.botones a{
+  background-color: #f6ae59;
+  
+}

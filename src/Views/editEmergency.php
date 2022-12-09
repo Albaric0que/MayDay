@@ -14,20 +14,25 @@
                     </div>
                     <div class="input-group">
                         <span class="spanClassification">Clasificación</span>
-                        <input class="inputGroupClassification" area-label="With textarea" type="text" name="classification" required value='<?php echo $data["emergency"]->getClassification()?>'>
+                        <textarea class="inputGroupClassification" area-label="With textarea" type="text" name="classification" required value><?php echo $data["emergency"]->getClassification()?></textarea>
                     </div>
                 </div>
                 <div class="rigthContainer">
                     <div class="input-group">
                         <span class="spanEmergency">Emergencia</span>
-                        <input class="inputGroupEmergency" area-label="With textarea" type="text" name="issue" required value='<?php echo $data["emergency"]->getIssue()?>'>
+                        <textarea class="inputGroupEmergency" area-label="With textarea" type="text" name="issue" required><?php echo $data["emergency"]->getIssue()?></textarea>
                     </div>
                 </div>
-                <div class="botones">
-                    <input class="btn-lg btn-outline-warning go-add-task float" type="reset" value="Reset">
-                    <input class="btn-lg btn-outline-success go-add-task float" type="submit" value="Edit">
-                    <a href="./index.php"><button type="button" id="button-cancel" class="btn btn-outline-danger button-cancel">Cancel</button></a>
-                    </div>
+                <!-- <div class="botones">
+                    <a href="./index.php"><button type="reset" class="btn btn-outline-danger button-cancel"><img src='./public/img/reset.png' alt="Botón de reset" width=50%></button></a>
+                    <a href="./index.php"><button type="button" class="btn btn-outline-danger button-cancel"><img src='./public/img/save.png' alt="Botón de guardar" width=50%></button></a>
+                    <a href="./index.php"><button type="button" id="button-cancel" class="btn btn-outline-danger button-cancel"><img src='./public/img/cancel.png' alt="Botón de cancelar" width=50%></button></a>
+                </div> -->
+                <div class="buttons">
+                    <input class="buttonCreate"type="image" value="Crear" src='./public/img/save.png' width="50%">
+                    <a href="./index.php"><button type="button" class="buttonCancel"><img src='./public/img/cancel.png' alt="Botón de cancelar" width=50%></button></a>
+                    <input class="buttonReset" type="reset" value="" style="background-image: url(./public/img/reset.png);">
+                </div>
                 </form>
             </div>
     </main>

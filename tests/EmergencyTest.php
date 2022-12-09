@@ -7,16 +7,16 @@ use App\Models\Emergency;
 
 class EmergencyTest extends TestCase {
     
-   /*  public function test_testOk() {
+    /*  public function test_testOk() {
         $this->assertEquals(1,1);
     } */
 
     public function test_ifGetNameWorkCorrectly() {
-       $newEmergency = new Emergency(null, "Lola", "Comment for issue", "Comment for classification", null);
+        $newEmergency = new Emergency(null, "Lola", "Comment for issue", "Comment for classification", null);
 
-       $resultGetEmergency = $newEmergency->getName();
+        $resultGetEmergency = $newEmergency->getName();
 
-       $this->assertEquals("Lola", $resultGetEmergency);
+        $this->assertEquals("Lola", $resultGetEmergency);
     }
 
     public function test_ifGetIssueWorkCorrectly() {

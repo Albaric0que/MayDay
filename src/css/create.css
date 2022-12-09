@@ -2,17 +2,6 @@
   font-family: "Cabin", sans-serif;
 }
 
-.footerContainer {
-  width: auto;
-  height: 93px;
-  background-color: #f6ae59;
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .createCard {
   width: 1112px;
   height: 518px;

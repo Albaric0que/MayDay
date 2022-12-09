@@ -75,11 +75,6 @@
   width: 572px;
   height: 58px;
 }
-/* 
-.buttonCancel {
-  border-color: none !important;
-  background-color: #f6ae59;
-} */
 
 .buttonReset, .buttonCancel, .buttonCreate {
   background-repeat: no-repeat;
@@ -89,4 +84,8 @@
   background-color: #f6ae59;
   border: 2px #f6ae59 solid;
   padding: 0px 0px 0px 0px;
+}
+
+.buttons {
+  display: flex;
 }

@@ -44,7 +44,7 @@
                                             <a href='?action=edit&id={$emergency->getId()}'><img src='./public/img/editar.png'></a>
                                         </td>
                                         <td>
-                                            <a href='?action=delete&id={$emergency->getId()}'><img src='./public/img/bin.png'></a>
+                                            <a onclick='return confirmation()' href='?action=delete&id={$emergency->getId()}'><img src='./public/img/bin.png'></a>
                                         </td>
                                     </tr>
                                     ";
@@ -61,6 +61,16 @@
         <?php
         require_once("Components/footer.php")
         ?> 
+        <script>
+            function confirmation() {
+                let response = confirm("¿Desea borrar este registro?");
+                if (response == true) {
+                    return true;
+                } else {
+                     return false;
+                 }
+            }
+        </script>
     </body>
 
 

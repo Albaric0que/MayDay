@@ -1,8 +1,8 @@
-# Proyect Name:
+# Project Name:
 MayDay
 ***
 
-# Proyect Description:
+# Project Description:
 Our project is a practice to learn how to do a CRUD with PHP. "MayDay" is an abnormal emergency center idea to work front and back with database and connect the CRUD. We also started testing.
 
 ***
@@ -23,7 +23,7 @@ XXX
 ***
 
 # Stacks:
-HTML, CSS, PHP & MySQL
+HTML5, CSS3, Vanilla PHP & MySQL
 
 ***
 

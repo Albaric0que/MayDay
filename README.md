@@ -18,12 +18,27 @@ Our project is a practice to learn how to do a CRUD with PHP. "MayDay" is an abn
     
 # Screenshoots:
 
-XXX
+## Atomic Design
+
+<img src="https://user-images.githubusercontent.com/98114939/207040143-80f26ca9-0b51-44ee-97f8-0d4412c9a2aa.png" width="25%"/>
+
+
+## Design main view
+
+<img src="https://user-images.githubusercontent.com/98114939/207038062-416f2491-7bb5-4eb1-a4df-bca29aa374e0.png" width="25%"/>
+
+## Design view create new emergency
+
+<img src="https://user-images.githubusercontent.com/98114939/207036364-51d11b18-5ba3-446e-bd61-43ef87572637.png" width="25%"/>
+
+## Design view edit emergency
+
+<img src="https://user-images.githubusercontent.com/98114939/207036428-7042a899-0c86-419f-994b-74f337892210.png" width="25%"/>
 
 ***
 
 # Stacks:
-HTML5, CSS3, Vanilla PHP & MySQL
+HTML5, CSS3, JS, Vanilla PHP & MySQL
 
 ***
 

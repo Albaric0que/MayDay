@@ -82,7 +82,6 @@ class Emergency{
 
   public function update(){
     $this->database->mysql->query("UPDATE `{$this->table}` SET `name` = '{$this->name}', `issue` = '{$this->issue}', `classification` = '{$this->classification}' WHERE `ID`= {$this->id}");
-
   }
 
 }

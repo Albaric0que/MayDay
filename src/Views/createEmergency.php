@@ -10,7 +10,7 @@
             <form class="formContainer" action='?action=store' method="post">
                 <div class="leftContainer">
                     <div class="input-group"  >
-                        <span class="spanName"">Nombre</span>
+                        <span class="spanName">Nombre</span>
                         <input  class="inputGroupName" type="text" name="name" required placeholder="Escribe aquí el nombre">
                     </div>
                     <div class="input-group">

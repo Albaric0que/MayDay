@@ -6,10 +6,6 @@ use PHPUnit\Framework\TestCase;
 use App\Models\Emergency;
 
 class EmergencyTest extends TestCase {
-    
-    /*  public function test_testOk() {
-        $this->assertEquals(1,1);
-    } */
 
     public function test_ifGetNameWorkCorrectly() {
         $newEmergency = new Emergency(null, "Lola", "Comment for issue", "Comment for classification", null);
@@ -35,7 +31,7 @@ class EmergencyTest extends TestCase {
         $this->assertEquals(null, $resultGetEmergency);
     }
 
-     public function test_ifGetClassificationWorkCorrectly() {
+    public function test_ifGetClassificationWorkCorrectly() {
         $newEmergency = new Emergency(null, "Lola", "Comment for issue", "Comment for classification", null);
 
         $resultGetEmergency = $newEmergency->getClassification();
@@ -50,7 +46,6 @@ class EmergencyTest extends TestCase {
 
         $this->assertEquals(null, $resultGetEmergency);
     }
-
 
 }
 

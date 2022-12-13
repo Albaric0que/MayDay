@@ -31,7 +31,7 @@
             </form>
         </div>
     </main>
-<?php
+    <?php
         require_once("Components/footer.php")
     ?> 
 </body>

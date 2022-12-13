@@ -66,13 +66,12 @@
                 let response = confirm("¿Desea borrar este registro?");
                 if (response == true) {
                     return true;
-                } else {
-                     return false;
-                 }
+                }
+                if (response != true){
+                    return false;
+                }
             }
         </script>
     </body>
-
-
 </html>
 

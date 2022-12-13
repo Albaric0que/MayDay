@@ -31,14 +31,12 @@
   margin: 50px 0px 30px 50px;
 }
 
-/*inputs */
 .input-group {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
 
-/* Text inputs */
 .inputGroupName {
   width: 333px;
   height: 58px;
@@ -57,7 +55,6 @@
   border: white solid 2px;
 }
 
-/* name inputs */
 .spanName {
   background-color: #f6ae59;
   width: 333px;

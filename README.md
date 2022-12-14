@@ -61,7 +61,7 @@ composer install
 
 - Create database in PhpMyAdmin with database name : databasemayday.
 
-- Import the following database table: minniePerez/public/importSql/databasemayday.sql
+- Import the following database table: MayDay/public/importSql/emergencies.sql
  
 ***
 

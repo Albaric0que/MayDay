@@ -42,11 +42,26 @@ HTML5, CSS3, JS, Vanilla PHP & MySQL
 
 ***
 
+# Required
+
+- PHP 7.4 min
+- Composer installed
+- mySql
+
 # How to install this project:
-- Clone Repository: https://github.com/elenarjonap/MayDay.git
-- composer.json
-- Comand: composer install
-- Use XAMPP (Apache & MySql)
+- Clone this repository
+```bash
+git clone https://github.com/elenarjonap/MayDay.git
+````
+   
+- Install dependencies
+```bash
+composer install
+````
+
+- Create database in PhpMyAdmin with database name : databasemayday.
+
+- Import the following database table: MayDay/public/importSql/emergencies.sql
  
 ***
 
@@ -57,11 +72,12 @@ Ok (5 test, 5 assertions)
 ***
 
 # Methodology:
-Methodology Agile. Mob Programming & Pair Programming.
+Methodology Agile with SCRUM. Mob Programming & Pair Programming.
 
 ***
 
 # Next Steps:
+- Add calendar to homepage
 - Implement different roles (admin, user, guest).
-- Add JS to improve the usability of the front.
+- Add JS to improve front-end usability.
 
